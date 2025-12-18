@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahez Calculator</title>
+    <link rel="stylesheet" href="./dahez.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="parent">
+            <div id="header">
+                <h1>Dowry Calculator</h1>
+            </div>
+            <div id="para">
+                How Much Dowry Should You Ask For?
+            </div>
+
+            <div id="root">
+                <div class="first">
+                    <label for="age">Age: </label>
+                    <select name="age" id="age">
+                        <option value="">Select Your Age</option>
+                    </select>
+                </div>
+
+                <div class="second">
+                    <label for="profession">Profession: </label>
+                    <select name="profession" id="profession">
+                        <option value="">Select your Profession</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="engineer">Engineer</option>
+                        <option value="it">It professional</option>
+                        <option value="gov">Government Employee</option>
+                        <option value="business">Business Owner</option>
+                        <option value="teacher">Teachers</option>
+                        <option value="lawyer">Lawyers</option>
+                        <option value="others">others</option>
+                    </select>
+                </div>
+
+                <div class="third">
+                    <label for="income">Monthly Salary (₹)</label>
+                    <input type="number" id="income" placeholder="Enter Your Monthly Salary">
+                </div>
+                <div class="four">
+                    <label for="edu">Education Level</label>
+                    <select name="edu" id="edu">
+                        <option value="">Select Your Education Level</option>
+                        <option value="high">High School</option>
+                        <option value="dip">Diploma</option>
+                        <option value="bd">Bachlor Degree</option>
+                        <option value="md">Master Degree</option>
+                        <option value="phd">PHD</option>
+                    </select>
+                </div>
+                <div class="five">
+                    <label for="eduexpenses">Education Expenses (₹)</label>
+                    <input type="number" id="eduexpenses">
+                </div>
+                <div class="six">
+                    <label>Marital Status</label>
+                    <div>
+                        <input type="radio" id="single" name="status" value="single">
+                        <label for="single">Single</label>
+                        <input type="radio" id="married" name="status" value="married">
+                        <label for="married">Married</label>
+                        <input type="radio" id="divorced" name="status" value="divorced">
+                        <label for="divorced">Divorced</label>
+                    </div>
+                </div>
+
+                <div class="seven">
+                    <label for="homeowner">Home Ownership</label>
+                    <div>
+                        <input type="radio" name="homeowner" id="own" value="own">
+                        <label for="own">Owned</label>
+                        <input type="radio" name="homeowner" id="ranted" value="rented">
+                        <label for="ranted">Rented</label>
+                    </div>
+                    <div class="eight">
+                        <label for="carowner">Car OwnerShip</label>
+                        <div>
+                            <input type="radio" name="carowner" id="carown" value="owner">
+                            <label for="carown">Owned</label>
+                            <input type="radio" name="carowner" id="carranted" value="ranted">
+                            <label for="carranted">Ranted</label>
+                        </div>
+                    </div>
+                    <div class="nine">
+                        <label for="loc">Location</label>
+                        <div>
+                            <input type="radio" id="in_ur" name="loc" value="India - Urban">
+                            <label for="in_ur">India - Urban</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="in_rul" name="loc" value="India - Rural">
+                            <label for="in_rul">India - Rural</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="loc" id="out" value="Outside">
+                            <label for="out">Outside India</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="cal">Calculate</button>
+                <div class="result"></div>
+            </div>
+            <div class="parent2">
+                <div class="part1">
+                    <ul>
+                        <h2>Did You Know?</h2>
+                        <li>The Dowry Prohibition Act was passed in India in 1961 to prohibit the giving or taking of
+                            dowry.
+                        </li>
+                        <li>Despite being illegal, dowry practices continue in many parts of South Asia.</li>
+                        <li>Many organizations are working to educate communities about the harmful effects of dowry.
+                        </li>
+                        <li>Modern marriages are increasingly based on mutual respect rather than financial
+                            transactions.
+                        </li>
+                    </ul>
+                </div>
+                <div class="part2">
+                    <h2>Resoures</h2>
+                    <a href="https://www.ncw.gov.in/" target="_blank" rel="noopener noreferrer">National Commission for
+                        Women - Dowry Prohibition Act</a>
+                    <a href="https://www.unicef.org/india/what-we-do/end-child-marriage" target="_blank"
+                        rel="noopener noreferrer">UNICEF
+                        India - Ending Child Marriage</a>
+                    <a href="https://www.unwomen.org/en/what-we-do/ending-violence-against-women" target="_blank"
+                        rel="noopener noreferrer">UN Women - Ending Violence Against Women</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="./dahez.js" defer></script>
+</body>
+
+</html>

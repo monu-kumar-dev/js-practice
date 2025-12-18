@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(219, 246, 246);
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  /* width: 80%; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.parent {
+  width: 40%;
+  background-color: whitesmoke;
+  padding: 20px;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+}
+.parent2 {
+  width: 80%;
+  margin-left: 40px;
+}
+
+.part1 {
+  height: 100%;
+  margin-top: 20px;
+  background-color: aliceblue;
+  /* box-shadow: offset-x offset-y blur-radius spread-radius color inset; */
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+  font-size: 1.3rem;
+  padding: 20px;
+}
+
+li {
+  margin-top: 30px;
+  color: #988383;
+  list-style-type: disc;
+}
+
+li::marker {
+  color: red; /* changes the square color */
+  font-size: 20px; /* optional: make the square bigger */
+}
+
+.part2 {
+  height: 30%;
+  background-color: aliceblue;
+  /* box-shadow: offset-x offset-y blur-radius spread-radius color inset; */
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+  font-size: 1.3rem;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+#header h1 {
+  font-size: 2rem;
+}
+#para {
+  font-size: 1.8rem;
+}
+
+.first,
+.second,
+.third,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+select {
+  height: 40px; /* makes dropdown taller */
+  font-size: 16px; /* increases text size */
+  border-radius: 5px;
+}
+input[type="number"] {
+  height: 40px; /* makes dropdown taller */
+  font-size: 16px; /* increases text size */
+  border-radius: 5px;
+}
+
+input[type="radio"] {
+  accent-color: black; /* pick your color */
+  cursor: pointer;
+  scale: 1.4;
+}
+
+/* If We want to Give own color */
+/* input[type="radio"] {
+  appearance: none; remove default look
+  width: 18px;
+  height: 18px;
+  border: 2px solid #666;
+  border-radius: 50%; make it round
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: red; your custom color
+  border-color: red;
+} */
+
+.cal {
+  height: 40px;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: rgb(214, 196, 4);
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+}

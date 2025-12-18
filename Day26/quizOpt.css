@@ -1,0 +1,131 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #333;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.question {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  transition: 0.3s;
+  border: 1px solid #eee;
+}
+
+.question:hover {
+  background: #f1faff;
+}
+
+.question p {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+label {
+  display: block;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+label:hover {
+  background: #e8f4ff;
+  border-color: #4cafef;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.1);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: linear-gradient(90deg, #4cafef, #3a9ed9);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #3a9ed9, #2c8cbf);
+  transform: translateY(-2px);
+}
+
+.out {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 12px;
+  display: none;
+}
+
+.out.success {
+  background: #e7fbe7;
+  color: #2c7a2c;
+  border: 1px solid #4caf50;
+}
+
+.out.fail {
+  background: #ffeaea;
+  color: #b71c1c;
+  border: 1px solid #e53935;
+}

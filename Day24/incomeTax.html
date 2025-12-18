@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+    <link rel="stylesheet" href="incomeTax.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Income Tax Calculator</h1>
+
+        <!-- Income Input -->
+        <label for="income">Enter Annual Income (₹):</label>
+        <input type="number" id="income" placeholder="Eg: 600000" />
+
+        <!-- Tax Regime Selection -->
+        <label for="slab">Choose Tax Regime:</label>
+        <select id="slab">
+            <option value="old">Old Regime</option>
+            <option value="new">New Regime</option>
+        </select>
+
+        <!-- Buttons -->
+        <button type="submit" id="calculate">Calculate Tax</button>
+        <button type="reset" id="reset">Reset</button>
+
+        <!-- Output Sections -->
+        <div id="result"></div>
+        <div id="breakdown"></div>
+    </div>
+
+    <script src="./incomeTax.js"></script>
+</body>
+
+</html>
